@@ -1,0 +1,83 @@
+body {
+  margin: 0 30px;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.navbar .nav .menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.navbar .nav .menu a {
+  text-decoration: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid black;
+  padding: 30px;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.about .bio {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.about .bio .box {
+  background-color: #ddd;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.portfolio {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.portfolio .proyek-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.portfolio .proyek-container .proyek-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  /* width: 300px; */
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.portfolio .proyek-container .proyek-box .images {
+  height: 60%;
+  width: 100%;
+  background-color: #eaeaea;
+}
