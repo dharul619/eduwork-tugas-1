@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Dharul Yuswansyah</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+      }
+      .profile-img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      .project-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <!-- Hire Me Modal -->
+  <div
+    class="modal fade"
+    id="hireModal"
+    tabindex="-1"
+    aria-labelledby="hireModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hireModalLabel">Message Sent</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>Thanks for reaching out! I will contact you soon.</p>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal cv-->
+  <div
+    class="modal fade"
+    id="downloadModal"
+    tabindex="-1"
+    aria-labelledby="downloadModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title" id="downloadModalLabel">Download Complete</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>Your CV has been downloaded successfully!</p>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Dharul</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-warning ms-2"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#downloadModal"
+              >
+                Download CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container text-center py-5">
+      <img src="images/profile.jpg" class="profile-img mb-3" alt="Profile" />
+      <h1>Hi, I'm <span class="text-warning">Dharul Yuswansyah</span></h1>
+      <h2 class="fw-bold">Web Developer</h2>
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <a
+        href="#"
+        class="btn btn-warning mt-2"
+        data-bs-toggle="modal"
+        data-bs-target="#hireModal"
+      >
+        Hire Me
+      </a>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <p><strong>Full Name:</strong> Dharul Yuswansyah</p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Contact:</strong> 082112249833</p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Education:</strong> SMK</p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Hobby:</strong> Programming</p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Pekerjaan:</strong> Belum Bekerja</p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Alamat:</strong> Cengkareng Jakarta Barat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5">
+      <div class="container text-center">
+        <h2>My Projects</h2>
+        <div class="mb-4">
+          <span class="badge bg-secondary">All</span>
+          <span class="badge bg-warning text-dark">Web Design</span>
+          <span class="badge bg-info text-dark">UI/UX</span>
+          <span class="badge bg-success">App Design</span>
+          <span class="badge bg-dark">Graphic Design</span>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img
+                src="images/proyek-1.webp"
+                class="card-img-top"
+                alt="Proyek 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Air Conditioning Landing Page</h5>
+                <p class="card-text">UI/UX | Web Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img
+                src="images/portfolio-2.jpg"
+                class="card-img-top"
+                alt="Proyek 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Business Landing Page</h5>
+                <p class="card-text">Web Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img
+                src="images/portfolio-3.jpg"
+                class="card-img-top"
+                alt="Proyek 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">E-commerce Page</h5>
+                <p class="card-text">App Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white text-center py-4">
+      <p>© 2025 Dharul Yuswansyah</p>
+    </footer>
+
+    <!-- Bootstrap Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
