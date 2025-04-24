@@ -5,6 +5,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbar {
+  position: fixed;
+  max-width: 100%;
+  top: 0;
+  left: 30px;
+  right: 30px;
+}
+
 .navbar .nav {
   display: flex;
   justify-content: space-between;
@@ -26,6 +34,7 @@ body {
 }
 
 .header {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "text images";
